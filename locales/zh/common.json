@@ -1,0 +1,224 @@
+{
+  "metaDescription": "Football Bros是一个现代化的游戏导航网站，帮助用户发现和探索他们喜欢的游戏。",
+  "header": {
+    "games": "全部游戏",
+    "Soccer": "足球游戏",
+    "features": "特色",
+    "testimonials": "用户评价",
+    "faq": "常见问题",
+    "site": {
+      "game": "游戏",
+      "station": "站"
+    },
+    "feedback": "反馈"
+  },
+  "hero": {
+    "title": "探索您的游戏世界",
+    "subtitle": "探索、发现并体验丰富多彩的游戏世界，找到您的下一个游戏冒险",
+    "browseGames": "浏览游戏",
+    "learnMore": "了解更多"
+  },
+  "games": {
+    "title": "超过 ",
+    "titleHighlight": "10万+",
+    "titleSuffix": " 款游戏可玩",
+    "subtitle": "从各种游戏类型中找到您喜欢的游戏风格，开启您的游戏之旅",
+    "loading": "正在加载游戏数据...",
+    "loadMore": "加载更多游戏",
+    "noGamesFound": "没有找到符合条件的游戏",
+    "noImage": "游戏图片",
+    "uncategorized": "未分类",
+    "error": "错误",
+    "refresh": "刷新",
+    "categories": {
+      "all": "全部",
+      "io": ".IO游戏",
+      "2player": "双人游戏",
+      "3d": "3D游戏",
+      "action": "动作游戏",
+      "adventure": "冒险游戏",
+      "arcade": "街机游戏",
+      "babyhazel": "儿童游戏",
+      "bejeweled": "宝石游戏",
+      "boys": "男孩游戏",
+      "clicker": "点击游戏",
+      "cooking": "烹饪游戏",
+      "girls": "女孩游戏",
+      "hypercasual": "休闲游戏",
+      "multiplayer": "多人游戏",
+      "puzzle": "益智游戏",
+      "racing": "赛车游戏",
+      "shooting": "射击游戏",
+      "soccer": "足球游戏",
+      "sports": "体育游戏",
+      "stickman": "火柴人游戏"
+    }
+  },
+  "pagination": {
+    "previous": "上一页",
+    "next": "下一页",
+    "page": "第{{page}}页"
+  },
+  "features": {
+    "titlePrefix": "为游戏爱好者打造的",
+    "titleHighlight": "终极",
+    "titleSuffix": "体验",
+    "subtitle": "我们提供各种功能，帮助您发现、探索和享受游戏",
+    "cards": {
+      "recommendation": {
+        "title": "智能游戏推荐",
+        "description": "根据您的兴趣和游戏历史，我们的智能算法将为您推荐最适合的游戏，确保您不会错过任何精彩内容。"
+      },
+      "categories": {
+        "title": "全面的游戏分类",
+        "description": "从动作、冒险到策略和模拟，我们提供丰富多样的游戏类别，帮助您快速找到喜爱的游戏类型。"
+      },
+      "details": {
+        "title": "详细的游戏信息",
+        "description": "每款游戏都提供详细信息，包括游戏介绍、系统要求、游戏评分和玩家评论，帮助您做出最佳选择。"
+      },
+      "download": {
+        "title": "快速下载链接",
+        "description": "一键获取官方下载链接，无需在网络上四处搜索，安全快速地开始您的游戏冒险。"
+      },
+      "community": {
+        "title": "玩家社区",
+        "description": "加入我们的玩家社区，分享游戏体验，获取攻略和策略，结识志同道合的游戏朋友。"
+      },
+      "news": {
+        "title": "游戏新闻",
+        "description": "及时获取最新游戏发布信息、行业动态和促销活动，让您始终站在游戏潮流的前沿。"
+      }
+    }
+  },
+  "testimonials": {
+    "titlePrefix": "玩家们的",
+    "titleHighlight": "真实",
+    "titleSuffix": "评价",
+    "subtitle": "听听其他游戏爱好者对我们平台的评价以及他们在Football Bros上的发现之旅",
+    "reviews": {
+      "user1": {
+        "content": "Football Bros彻底改变了我寻找游戏的方式！界面设计非常直观，分类系统让我能够快速找到感兴趣的游戏。最重要的是，它的推荐算法非常准确，我发现了很多以前不知道但现在非常喜欢的游戏。",
+        "name": "约翰·米勒",
+        "role": "资深游戏玩家"
+      },
+      "user2": {
+        "content": "作为一个家长，我一直在寻找适合我孩子的游戏。Football Bros的详细分类和年龄评级系统让我能够轻松找到适合的游戏。网站的设计也非常清晰，即使我不太懂技术也能轻松使用。",
+        "name": "莎拉·约翰逊",
+        "role": "关注孩子教育的家长"
+      },
+      "user3": {
+        "content": "我是一个独立游戏开发者，Football Bros为我的游戏提供了绝佳的展示平台。网站的用户群体非常精准，我通过这个平台接触到了很多对我游戏感兴趣的玩家。平台的运营团队也非常专业和支持。",
+        "name": "迈克尔·汤普森",
+        "role": "独立游戏开发者"
+      },
+      "user4": {
+        "content": "作为一个电子竞技爱好者，我喜欢Football Bros对竞技游戏的专业分类和深入分析。他们提供的游戏资讯和比赛信息非常及时和全面，已经成为我获取游戏信息的首选平台。",
+        "name": "大卫·罗德里格斯",
+        "role": "电竞爱好者"
+      },
+      "user5": {
+        "content": "Football Bros的用户社区是我最喜欢的功能之一。在这里我认识了很多志同道合的朋友，我们一起讨论游戏，分享心得。这个平台不仅是一个游戏导航站，更是一个游戏爱好者的家园。",
+        "name": "艾米丽·威尔逊",
+        "role": "社区活跃玩家"
+      },
+      "user6": {
+        "content": "网站的响应速度非常快，设计也很现代化，给人一种高端大气的感觉。作为一个UI设计师，我非常欣赏Football Bros的界面设计和用户体验，它设置了游戏网站设计的新标准。",
+        "name": "瑞安·布鲁克斯",
+        "role": "UI设计师"
+      }
+    }
+  },
+  "faq": {
+    "titlePrefix": "常见",
+    "titleHighlight": "问题",
+    "titleSuffix": "解答",
+    "subtitle": "我们收集了用户的一些常见问题，希望能帮助您更好地了解Football Bros",
+    "questions": {
+      "recommendation": {
+        "question": "Football Bros如何推荐游戏？",
+        "answer": "Football Bros使用先进的推荐算法，基于您的浏览历史、游戏偏好以及其他用户的反馈来推荐游戏。我们的系统不断学习和优化，以提供最准确的游戏推荐。此外，我们的游戏专家团队还定期策划精选游戏合集，确保您能发现高质量的游戏内容。"
+      },
+      "search": {
+        "question": "如何在Football Bros上查找特定类型的游戏？",
+        "answer": "您可以使用我们网站顶部的搜索功能直接搜索游戏名称或关键词。此外，我们提供多种分类方式，让您可以按游戏类型、平台、发行年份等进行筛选。在游戏分类页面，您可以使用左侧的筛选器精确定位您感兴趣的游戏类型。"
+      },
+      "update": {
+        "question": "Football Bros上的游戏信息多久更新一次？",
+        "answer": "我们的游戏数据库每天更新，确保提供最新的游戏信息。新发布的游戏通常会在发布当天或次日添加到我们的数据库中。游戏评分、评论和用户反馈则是实时更新的。我们的编辑团队还会定期审核和更新游戏描述和详细信息，确保准确性。"
+      },
+      "community": {
+        "question": "如何加入Football Bros用户社区？",
+        "answer": "您只需注册一个Football Bros账号即可加入我们的社区。注册后，您可以参与游戏讨论，分享您的游戏体验，发表评论和评分，与其他游戏爱好者互动。我们还有专门的社区论坛和Discord服务器，您可以通过网站顶部的\"社区\"链接访问。"
+      },
+      "download": {
+        "question": "Football Bros是否提供游戏下载服务？",
+        "answer": "Football Bros主要是一个游戏导航和信息平台，我们不直接提供游戏下载服务。但是，我们为每款游戏提供官方购买或下载链接，引导您前往游戏开发商或授权经销商的网站进行购买或下载。这确保您获得合法游戏，并支持游戏开发者的工作。"
+      },
+      "submit": {
+        "question": "如何将自己开发的游戏提交到Football Bros？",
+        "answer": "如果您是游戏开发者，可以通过我们网站底部的\"开发者资源\"链接提交您的游戏。您需要提供游戏的基本信息、截图、视频、系统要求等详细资料。我们的审核团队会在收到提交后的5个工作日内进行审核，审核通过后将您的游戏添加到我们的数据库中。"
+      }
+    }
+  },
+  "footer": {
+    "description": "您的游戏导航站，帮助您发现并探索精彩的游戏世界",
+    "navigation": "网站导航",
+    "navLinks": {
+      "home": "首页",
+      "features": "特色功能",
+      "games": "游戏分类",
+      "testimonials": "用户评价",
+      "faq": "常见问题",
+      "about": "关于我们"
+    },
+    "popularCategories": "热门分类",
+    "contact": "联系我们",
+    "contactEmail": "邮箱",
+    "copyright": "© 2025 游戏站. 保留所有权利。由developer设计和开发",
+    "disclaimer": "本网站仅供演示用途，所有游戏商标和图像均属于其各自所有者"
+  },
+  "languageSwitcher": "English",
+
+  "gameDetail": {
+    "pageTitle": "游戏详情 - Football Bros",
+    "backButton": "返回",
+    "backToHome": "返回首页",
+    "loading": "加载中...",
+    "gameInfo": {
+      "categories": "游戏分类：",
+      "tags": "游戏标签：",
+      "description": "游戏描述：",
+      "publishedDate": "发布日期：",
+      "gameSize": "游戏大小：",
+      "uncategorized": "未分类",
+      "noTags": "无标签",
+      "noDescription": "暂无游戏描述"
+    },
+    "gameWindow": {
+      "startGame": "开始游戏",
+      "loading": "正在加载游戏...",
+      "refreshGame": "刷新游戏",
+      "fullscreenMode": "全屏模式",
+      "originalSize": "原始尺寸",
+      "adaptScreen": "适应屏幕宽度",
+      "noGameLink": "无可用游戏链接",
+      "loadFailed": "游戏加载失败，请刷新页面"
+    },
+    "recommended": {
+      "title": "为您推荐",
+      "rating": "评分"
+    },
+    "errors": {
+      "loadFailed": "加载失败",
+      "noGameId": "未找到游戏ID，请返回游戏列表",
+      "getGameFailed": "获取游戏详情失败",
+      "gameNotFound": "游戏未找到。请求的游戏可能不存在或已被移除。",
+      "findOtherGames": "寻找其他游戏。",
+      "unknownError": "未知错误",
+      "networkFailed": "网络请求失败，状态码",
+      "refreshTip": "请尝试刷新页面或返回游戏列表。",
+      "loadGameFailed": "无法加载游戏"
+    }
+  }
+}

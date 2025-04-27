@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      All Games - Football Bros - Play for free online - View More Category
+    </title>
+    <meta
+      name="description"
+      content="Free online Football Bros game, explore tens of thousands of exciting games, start now!"
+    />
+    <meta
+      name="keywords"
+      content="football bros, games, free games, online games,navigation, game categories, game recommendations"
+    />
+
+    <meta name="author" content="developer" />
+
+    <!-- SEO - 规范标签，防止重复内容 -->
+    <link rel="canonical" href="https://onlinefootballbros.com/games.html" />
+
+    <!-- SEO - 多语言支持标签 -->
+    <link
+      rel="alternate"
+      href="https://onlinefootballbros.com/games.html"
+      hreflang="en-US"
+    />
+    <link
+      rel="alternate"
+      href="https://onlinefootballbros.com/games.html?lang=zh"
+      hreflang="zh-CN"
+    />
+    <!-- SEO - 搜索引擎控制标签 -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO - 网站所有者验证（与首页保持一致） -->
+    <meta
+      name="google-site-verification"
+      content="your-google-verification-code"
+    />
+    <meta
+      name="baidu-site-verification"
+      content="your-baidu-verification-code"
+    />
+
+    <!-- SEO - Open Graph 标签（用于社交媒体分享） -->
+    <meta
+      property="og:title"
+      content="All Games - Football Bros - Play for free online - View More Category"
+    />
+    <meta
+      property="og:description"
+      content="Browse and discover all games available on Football Bros. Find your favorite games by category."
+    />
+    <meta
+      property="og:image"
+      content="https://onlinefootballbros.com/img/preview.png"
+    />
+    <meta
+      property="og:url"
+      content="https://onlinefootballbros.com/games.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Football Bros" />
+
+    <!-- SEO - Twitter 卡片标签 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="All Games - Football Bros - Play for free online - View More Category"
+    />
+    <meta
+      name="twitter:description"
+      content="Browse and discover all games available on Football Bros. Find your favorite games by category."
+    />
+    <meta
+      name="twitter:image"
+      content="https://onlinefootballbros.com/img/preview.png"
+    />
+
+    <!-- SEO - 网站图标设置 -->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/img/favicon.ico" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8b5cf6",
+              secondary: "#6366f1",
+              dark: "#1d1d1f",
+              light: "#f5f5f7",
+            },
+            fontFamily: {
+              sans: [
+                "SF Pro Display",
+                "SF Pro Icons",
+                "Helvetica Neue",
+                "Helvetica",
+                "Arial",
+                "sans-serif",
+              ],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- 自定义样式 -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .text-gradient {
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        .bg-blur {
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+        }
+      }
+    </style>
+
+    <!-- 固定背景图样式 -->
+    <style>
+      body {
+        /* 设置背景图片，使用绝对路径 */
+        background-image: url("./img/background.webp");
+        background-color: #000;
+
+        /* 固定背景图片，滚动时不会移动 */
+        background-attachment: fixed;
+        /* 背景图片不重复 */
+        background-repeat: no-repeat;
+        /* 背景图片覆盖整个元素区域，保持纵横比 */
+        background-size: cover;
+        /* 设置背景图片的位置居中 */
+        background-position: center center;
+        /* 确保滚动平滑 */
+        scroll-behavior: smooth;
+      }
+
+      /* 添加半透明黑色叠加层，确保文字清晰可见 */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* 70%的透明度黑色遮罩 */
+        z-index: -1;
+      }
+
+      /* 语言选择下拉菜单样式 */
+      #language-options {
+        z-index: 9999 !important; /* 确保下拉菜单显示在最上层 */
+        display: none; /* 默认隐藏 */
+        background-color: rgba(29, 29, 31, 0.95); /* 更深的背景色 */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* 更强的阴影 */
+        border: 1px solid rgba(255, 255, 255, 0.1); /* 更明显的边框 */
+      }
+
+      /* 确保下拉菜单在父元素之上 */
+      #language-dropdown {
+        position: relative;
+        z-index: 9999 !important;
+      }
+
+      /* 为LOGO添加特殊样式 */
+      .logo-text {
+        text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+        letter-spacing: -0.5px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .logo-text::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(139, 92, 246, 0.8),
+          transparent
+        );
+        opacity: 0.7;
+      }
+
+      @media (min-width: 768px) {
+        .logo-text {
+          font-size: 1.75rem;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .logo-text {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+
+    <!-- i18next 国际化支持 -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.8.14/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.4.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.4/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+
+    <!-- 确保i18n.js首先加载，因为其他模块依赖它 -->
+    <script src="js/i18n.js"></script>
+    <!-- 引入其他模块化的JS文件 -->
+    <script src="js/faq.js"></script>
+    <script src="js/games.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- 设置默认语言为英文的内联脚本 -->
+    <script>
+      // 设置默认语言为英文（针对首次访问的用户）
+      (function () {
+        try {
+          // 如果没有设置过语言或是首次访问，默认使用英文
+          if (
+            !localStorage.getItem("i18nextLng") ||
+            !localStorage.getItem("visited")
+          ) {
+            console.log("首页脚本检测到首次访问或未设置语言，默认使用英文");
+            localStorage.setItem("visited", "true");
+            localStorage.setItem("i18nextLng", "en");
+            // 设置cookie作为备份
+            document.cookie = "i18next=en;path=/;max-age=31536000";
+          }
+        } catch (e) {
+          console.warn("无法设置默认语言:", e);
+        }
+      })();
+    </script>
+  </head>
+  <body class="text-white font-sans">
+    <!-- Header 区域 -->
+    <header
+      class="fixed w-full bg-dark bg-opacity-70 backdrop-blur-sm border-b border-white border-opacity-10 z-50"
+    >
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a href="index.html" class="font-bold">
+            <span
+              class="logo-text text-gradient bg-gradient-to-r from-primary via-secondary to-purple-500 bg-clip-text text-transparent font-black tracking-tight"
+              >OnlineFootballBros.com</span
+            >
+          </a>
+
+          <!-- 导航菜单 - 桌面端 -->
+          <nav class="hidden md:flex space-x-8">
+            <a
+              href="index.html"
+              class="text-lg font-medium text-light hover:text-primary transition-colors"
+              data-i18n="header.Soccer"
+              >Soccer Games</a
+            >
+            <a
+              href="#features"
+              class="text-lg font-medium text-light hover:text-primary transition-colors"
+              data-i18n="header.features"
+              >Features</a
+            >
+            <a
+              href="#testimonials"
+              class="text-lg font-medium text-light hover:text-primary transition-colors"
+              data-i18n="header.testimonials"
+              >Testimonials</a
+            >
+            <a
+              href="#faq"
+              class="text-lg font-medium text-light hover:text-primary transition-colors"
+              data-i18n="header.faq"
+              >FAQ</a
+            >
+          </nav>
+
+          <!-- 搜索按钮 -->
+          <div class="flex items-center space-x-4">
+            <button class="text-light hover:text-primary transition-colors">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+
+            <!-- 移动端菜单按钮 -->
+            <button
+              class="md:hidden text-light hover:text-primary transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+
+            <!-- 语言选择下拉菜单 -->
+            <div id="language-dropdown" class="relative">
+              <button
+                id="language-button"
+                class="text-sm text-light hover:text-primary transition-colors flex items-center"
+                type="button"
+              >
+                <!-- 由JS脚本填充当前语言 -->
+                <span class="mr-1"></span>
+                <span></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 ml-1"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+              <div
+                id="language-options"
+                class="absolute right-0 mt-2 py-1 w-48 bg-dark border border-gray-700 rounded-md shadow-lg z-100"
+              >
+                <!-- 语言选项由JS脚本填充 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 游戏分类区域 -->
+    <section id="games" class="pt-32 pb-20 px-4">
+      <div class="container mx-auto">
+        <!-- 标题 -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-bold mb-4">
+            <span data-i18n="games.title">Over </span>
+            <span
+              class="text-gradient bg-gradient-to-r from-primary to-secondary"
+              data-i18n="games.titleHighlight"
+              >100,000 +</span
+            >
+            <span data-i18n="games.titleSuffix"> Games Available</span>
+          </h2>
+          <p
+            class="text-xl text-gray-300 max-w-3xl mx-auto"
+            data-i18n="games.subtitle"
+          >
+            Find your favorite game style from various game types, start your
+            gaming journey
+          </p>
+        </div>
+
+        <!-- 分类选项卡 -->
+        <div class="flex justify-center flex-wrap gap-4 mb-12">
+          <button
+            class="px-6 py-2 bg-primary rounded-full text-white font-medium"
+            data-i18n="games.categories.all"
+            key="All"
+          >
+            All
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.io"
+            key=".IO"
+          >
+            .IO
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.2player"
+            key="2 Player"
+          >
+            2 Player
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.3d"
+            key="3D"
+          >
+            3D
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.action"
+            key="Action"
+          >
+            Action
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.adventure"
+            key="Adventure"
+          >
+            Adventure
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.arcade"
+            key="Arcade"
+          >
+            Arcade
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.babyhazel"
+            key="Baby Hazel"
+          >
+            Baby Hazel
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.bejeweled"
+            key="Bejeweled"
+          >
+            Bejeweled
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.boys"
+            key="Boys"
+          >
+            Boys
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.clicker"
+            key="Clicker"
+          >
+            Clicker
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.cooking"
+            key="Cooking"
+          >
+            Cooking
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.girls"
+            key="Girls"
+          >
+            Girls
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.hypercasual"
+            key="Hypercasual"
+          >
+            Hypercasual
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.multiplayer"
+            key="Multiplayer"
+          >
+            Multiplayer
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.puzzle"
+            key="Puzzle"
+          >
+            Puzzle
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.racing"
+            key="Racing"
+          >
+            Racing
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.shooting"
+            key="Shooting"
+          >
+            Shooting
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.soccer"
+            key="Soccer"
+          >
+            Soccer
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.sports"
+            key="Sports"
+          >
+            Sports
+          </button>
+          <button
+            class="px-6 py-2 bg-white bg-opacity-5 rounded-full text-white font-medium transition-colors"
+            data-i18n="games.categories.stickman"
+            key="Stickman"
+          >
+            Stickman
+          </button>
+        </div>
+
+        <!-- 游戏卡片网格 -->
+        <div
+          id="games-container"
+          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4"
+        ></div>
+
+        <!-- 分页组件 -->
+        <div class="text-center mt-12"></div>
+      </div>
+    </section>
+
+    <!-- 特色功能区域 -->
+    <section id="features" class="py-20 px-4">
+      <div class="container mx-auto">
+        <!-- 标题 -->
+        <div class="text-center mb-20">
+          <h2 class="text-3xl md:text-5xl font-bold mb-6">
+            <span data-i18n="features.titlePrefix">Ultimate</span>
+            <span
+              class="text-gradient bg-gradient-to-r from-primary to-secondary"
+              data-i18n="features.titleHighlight"
+              >Experience</span
+            >
+            <span data-i18n="features.titleSuffix">for Gamers</span>
+          </h2>
+          <p
+            class="text-xl text-gray-300 max-w-3xl mx-auto"
+            data-i18n="features.subtitle"
+          >
+            We provide various features to help you discover, explore and enjoy
+            gaming
+          </p>
+        </div>
+
+        <!-- 特色功能卡片 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- 功能卡片 1 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl hover:bg-opacity-10 transition-all duration-300 border border-white border-opacity-5"
+          >
+            <div
+              class="w-14 h-14 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-bold mb-3"
+              data-i18n="features.cards.recommendation.title"
+            >
+              Smart Game Recommendations
+            </h3>
+            <p
+              class="text-gray-400"
+              data-i18n="features.cards.recommendation.description"
+            >
+              Based on your interests and gaming history, our smart algorithm
+              will recommend the most suitable games for you, ensuring you never
+              miss any exciting content.
+            </p>
+          </div>
+
+          <!-- 功能卡片 2 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl hover:bg-opacity-10 transition-all duration-300 border border-white border-opacity-5"
+          >
+            <div
+              class="w-14 h-14 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-bold mb-3"
+              data-i18n="features.cards.categories.title"
+            >
+              Comprehensive Game Categories
+            </h3>
+            <p
+              class="text-gray-400"
+              data-i18n="features.cards.categories.description"
+            >
+              From action, adventure to strategy and simulation, we provide a
+              rich variety of game categories to help you quickly find your
+              favorite game types.
+            </p>
+          </div>
+
+          <!-- 功能卡片 3 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl hover:bg-opacity-10 transition-all duration-300 border border-white border-opacity-5"
+          >
+            <div
+              class="w-14 h-14 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-bold mb-3"
+              data-i18n="features.cards.details.title"
+            >
+              Detailed Game Information
+            </h3>
+            <p
+              class="text-gray-400"
+              data-i18n="features.cards.details.description"
+            >
+              Each game provides detailed information, including game
+              introduction, system requirements, game ratings and player
+              reviews, helping you make the best choice.
+            </p>
+          </div>
+
+          <!-- 功能卡片 4 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl hover:bg-opacity-10 transition-all duration-300 border border-white border-opacity-5"
+          >
+            <div
+              class="w-14 h-14 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-bold mb-3"
+              data-i18n="features.cards.download.title"
+            >
+              Quick Download Links
+            </h3>
+            <p
+              class="text-gray-400"
+              data-i18n="features.cards.download.description"
+            >
+              Get official download links with one click, no need to search all
+              over the internet, start your gaming adventure safely and quickly.
+            </p>
+          </div>
+
+          <!-- 功能卡片 5 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl hover:bg-opacity-10 transition-all duration-300 border border-white border-opacity-5"
+          >
+            <div
+              class="w-14 h-14 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-bold mb-3"
+              data-i18n="features.cards.community.title"
+            >
+              Player Community
+            </h3>
+            <p
+              class="text-gray-400"
+              data-i18n="features.cards.community.description"
+            >
+              Join our player community, share gaming experiences, get tips and
+              strategies, and meet like-minded gaming friends.
+            </p>
+          </div>
+
+          <!-- 功能卡片 6 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl hover:bg-opacity-10 transition-all duration-300 border border-white border-opacity-5"
+          >
+            <div
+              class="w-14 h-14 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mb-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-primary"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+            <h3
+              class="text-xl font-bold mb-3"
+              data-i18n="features.cards.news.title"
+            >
+              Gaming News
+            </h3>
+            <p
+              class="text-gray-400"
+              data-i18n="features.cards.news.description"
+            >
+              Get the latest game release information, industry trends and
+              promotional activities in a timely manner, keeping you at the
+              forefront of gaming trends.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 用户评价区域 -->
+    <section id="testimonials" class="py-20 px-4">
+      <div class="container mx-auto">
+        <!-- 标题 -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-bold mb-6">
+            <span data-i18n="testimonials.titlePrefix">Real</span>
+            <span
+              class="text-gradient bg-gradient-to-r from-primary to-secondary"
+              data-i18n="testimonials.titleHighlight"
+              >Player</span
+            >
+            <span data-i18n="testimonials.titleSuffix">Reviews</span>
+          </h2>
+          <p
+            class="text-xl text-gray-300 max-w-3xl mx-auto"
+            data-i18n="testimonials.subtitle"
+          >
+            Hear what other gaming enthusiasts say about our platform and their
+            discovery journey on Football Bros
+          </p>
+        </div>
+
+        <!-- 评价卡片 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- 评价卡片 1 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl border border-white border-opacity-5 flex flex-col"
+          >
+            <!-- 引号图标 -->
+            <svg
+              class="h-10 w-10 text-primary mb-6 opacity-50"
+              fill="currentColor"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 8v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4zm12 0v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4z"
+              />
+            </svg>
+
+            <!-- 评价内容 -->
+            <p
+              class="text-gray-300 mb-6 flex-grow"
+              data-i18n="testimonials.reviews.user1.content"
+            >
+              "Football Bros completely changed the way I find games! The
+              interface design is very intuitive, and the classification system
+              allows me to quickly find games I'm interested in. Most
+              importantly, its recommendation algorithm is very accurate, and I
+              discovered many games that I didn't know before but now really
+              enjoy."
+            </p>
+
+            <!-- 用户信息 -->
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold"
+              >
+                JM
+              </div>
+              <div class="ml-4">
+                <h4
+                  class="font-bold"
+                  data-i18n="testimonials.reviews.user1.name"
+                >
+                  John Miller
+                </h4>
+                <p
+                  class="text-sm text-gray-400"
+                  data-i18n="testimonials.reviews.user1.role"
+                >
+                  Experienced Gamer
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 评价卡片 2 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl border border-white border-opacity-5 flex flex-col"
+          >
+            <!-- 引号图标 -->
+            <svg
+              class="h-10 w-10 text-primary mb-6 opacity-50"
+              fill="currentColor"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 8v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4zm12 0v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4z"
+              />
+            </svg>
+
+            <!-- 评价内容 -->
+            <p
+              class="text-gray-300 mb-6 flex-grow"
+              data-i18n="testimonials.reviews.user2.content"
+            >
+              "As a parent, I've been looking for games suitable for my
+              children. Football Bros's detailed categories and age rating
+              system make it easy for me to find appropriate games. The website
+              design is also very clear, making it easy to use even for someone
+              like me who isn't very tech-savvy."
+            </p>
+
+            <!-- 用户信息 -->
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold"
+              >
+                SJ
+              </div>
+              <div class="ml-4">
+                <h4
+                  class="font-bold"
+                  data-i18n="testimonials.reviews.user2.name"
+                >
+                  Sarah Johnson
+                </h4>
+                <p
+                  class="text-sm text-gray-400"
+                  data-i18n="testimonials.reviews.user2.role"
+                >
+                  Parent Focused on Children's Education
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 评价卡片 3 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl border border-white border-opacity-5 flex flex-col"
+          >
+            <!-- 引号图标 -->
+            <svg
+              class="h-10 w-10 text-primary mb-6 opacity-50"
+              fill="currentColor"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 8v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4zm12 0v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4z"
+              />
+            </svg>
+
+            <!-- 评价内容 -->
+            <p
+              class="text-gray-300 mb-6 flex-grow"
+              data-i18n="testimonials.reviews.user3.content"
+            >
+              "I'm an independent game developer, and Football Bros provides an
+              excellent platform to showcase my games. The website's user base
+              is very targeted, and through this platform, I've connected with
+              many players interested in my games. The platform's operations
+              team is also very professional and supportive."
+            </p>
+
+            <!-- 用户信息 -->
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold"
+              >
+                MT
+              </div>
+              <div class="ml-4">
+                <h4
+                  class="font-bold"
+                  data-i18n="testimonials.reviews.user3.name"
+                >
+                  Michael Thompson
+                </h4>
+                <p
+                  class="text-sm text-gray-400"
+                  data-i18n="testimonials.reviews.user3.role"
+                >
+                  Independent Game Developer
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 评价卡片 4 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl border border-white border-opacity-5 flex flex-col"
+          >
+            <!-- 引号图标 -->
+            <svg
+              class="h-10 w-10 text-primary mb-6 opacity-50"
+              fill="currentColor"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 8v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4zm12 0v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4z"
+              />
+            </svg>
+
+            <!-- 评价内容 -->
+            <p
+              class="text-gray-300 mb-6 flex-grow"
+              data-i18n="testimonials.reviews.user4.content"
+            >
+              "As an esports enthusiast, I appreciate Football Bros's
+              professional categorization and in-depth analysis of competitive
+              games. The game information and match updates they provide are
+              very timely and comprehensive, making it my go-to platform for
+              gaming information."
+            </p>
+
+            <!-- 用户信息 -->
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold"
+              >
+                DR
+              </div>
+              <div class="ml-4">
+                <h4
+                  class="font-bold"
+                  data-i18n="testimonials.reviews.user4.name"
+                >
+                  David Rodriguez
+                </h4>
+                <p
+                  class="text-sm text-gray-400"
+                  data-i18n="testimonials.reviews.user4.role"
+                >
+                  Esports Enthusiast
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 评价卡片 5 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl border border-white border-opacity-5 flex flex-col"
+          >
+            <!-- 引号图标 -->
+            <svg
+              class="h-10 w-10 text-primary mb-6 opacity-50"
+              fill="currentColor"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 8v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4zm12 0v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4z"
+              />
+            </svg>
+
+            <!-- 评价内容 -->
+            <p
+              class="text-gray-300 mb-6 flex-grow"
+              data-i18n="testimonials.reviews.user5.content"
+            >
+              "Football Bros's user community is one of my favorite features.
+              Here, I've met many like-minded friends, and we discuss games and
+              share experiences together. This platform is not just a game
+              navigation site but also a home for gaming enthusiasts."
+            </p>
+
+            <!-- 用户信息 -->
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold"
+              >
+                EW
+              </div>
+              <div class="ml-4">
+                <h4
+                  class="font-bold"
+                  data-i18n="testimonials.reviews.user5.name"
+                >
+                  Emily Wilson
+                </h4>
+                <p
+                  class="text-sm text-gray-400"
+                  data-i18n="testimonials.reviews.user5.role"
+                >
+                  Active Community Player
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 评价卡片 6 -->
+          <div
+            class="bg-white bg-opacity-5 p-8 rounded-2xl border border-white border-opacity-5 flex flex-col"
+          >
+            <!-- 引号图标 -->
+            <svg
+              class="h-10 w-10 text-primary mb-6 opacity-50"
+              fill="currentColor"
+              viewBox="0 0 32 32"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 8v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4zm12 0v6c0 2.2-1.8 4-4 4v4c4.4 0 8-3.6 8-8V8h-4z"
+              />
+            </svg>
+
+            <!-- 评价内容 -->
+            <p
+              class="text-gray-300 mb-6 flex-grow"
+              data-i18n="testimonials.reviews.user6.content"
+            >
+              "The website responds very quickly, and the design is modern,
+              giving a high-end and impressive feel. As a UI designer, I really
+              appreciate Football Bros's interface design and user experience.
+              It sets a new standard for gaming website design."
+            </p>
+
+            <!-- 用户信息 -->
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white font-bold"
+              >
+                RB
+              </div>
+              <div class="ml-4">
+                <h4
+                  class="font-bold"
+                  data-i18n="testimonials.reviews.user6.name"
+                >
+                  Ryan Brooks
+                </h4>
+                <p
+                  class="text-sm text-gray-400"
+                  data-i18n="testimonials.reviews.user6.role"
+                >
+                  UI Designer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题区域 -->
+    <section id="faq" class="py-20 px-4">
+      <div class="container mx-auto">
+        <!-- 标题 -->
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-bold mb-6">
+            <span data-i18n="faq.titlePrefix">Frequently</span>
+            <span
+              class="text-gradient bg-gradient-to-r from-primary to-secondary"
+              data-i18n="faq.titleHighlight"
+              >Asked</span
+            >
+            <span data-i18n="faq.titleSuffix">Questions</span>
+          </h2>
+          <p
+            class="text-xl text-gray-300 max-w-3xl mx-auto"
+            data-i18n="faq.subtitle"
+          >
+            We've collected some frequently asked questions from users, hoping
+            to help you better understand Football Bros
+          </p>
+        </div>
+
+        <!-- FAQ 列表 -->
+        <div class="max-w-4xl mx-auto space-y-6">
+          <!-- FAQ 项目 1 -->
+          <div
+            class="faq-item bg-white bg-opacity-5 rounded-xl overflow-hidden border border-white border-opacity-5"
+          >
+            <button
+              class="w-full flex items-center justify-between p-6 text-left"
+              aria-expanded="false"
+            >
+              <h3
+                class="text-xl font-medium"
+                data-i18n="faq.questions.recommendation.question"
+              >
+                How does Football Bros recommend games?
+              </h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-primary transition-transform duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div class="faq-content px-6 pb-6 hidden">
+              <p
+                class="text-gray-300"
+                data-i18n="faq.questions.recommendation.answer"
+              >
+                Football Bros uses advanced recommendation algorithms based on
+                your browsing history, game preferences, and feedback from other
+                users to recommend games. Our system continuously learns and
+                optimizes to provide the most accurate game recommendations.
+                Additionally, our team of game experts regularly curates
+                featured game collections to ensure you discover high-quality
+                game content.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 项目 2 -->
+          <div
+            class="faq-item bg-white bg-opacity-5 rounded-xl overflow-hidden border border-white border-opacity-5"
+          >
+            <button
+              class="w-full flex items-center justify-between p-6 text-left"
+              aria-expanded="false"
+            >
+              <h3
+                class="text-xl font-medium"
+                data-i18n="faq.questions.search.question"
+              >
+                How do I find specific types of games on Football Bros?
+              </h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-primary transition-transform duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div class="faq-content px-6 pb-6 hidden">
+              <p class="text-gray-300" data-i18n="faq.questions.search.answer">
+                You can use the search function at the top of our website to
+                directly search for game names or keywords. Additionally, we
+                provide multiple categorization methods allowing you to filter
+                by game type, platform, release year, and more. On the game
+                category page, you can use the filters on the left to precisely
+                locate the game types you're interested in.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 项目 3 -->
+          <div
+            class="faq-item bg-white bg-opacity-5 rounded-xl overflow-hidden border border-white border-opacity-5"
+          >
+            <button
+              class="w-full flex items-center justify-between p-6 text-left"
+              aria-expanded="false"
+            >
+              <h3
+                class="text-xl font-medium"
+                data-i18n="faq.questions.update.question"
+              >
+                How often is game information updated on Football Bros?
+              </h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-primary transition-transform duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div class="faq-content px-6 pb-6 hidden">
+              <p class="text-gray-300" data-i18n="faq.questions.update.answer">
+                Our game database is updated daily to ensure the latest game
+                information is provided. Newly released games are typically
+                added to our database on the day of release or the following
+                day. Game ratings, reviews, and user feedback are updated in
+                real-time. Our editorial team also regularly reviews and updates
+                game descriptions and detailed information to ensure accuracy.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 项目 4 -->
+          <div
+            class="faq-item bg-white bg-opacity-5 rounded-xl overflow-hidden border border-white border-opacity-5"
+          >
+            <button
+              class="w-full flex items-center justify-between p-6 text-left"
+              aria-expanded="false"
+            >
+              <h3
+                class="text-xl font-medium"
+                data-i18n="faq.questions.community.question"
+              >
+                How do I join the Football Bros user community?
+              </h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-primary transition-transform duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div class="faq-content px-6 pb-6 hidden">
+              <p
+                class="text-gray-300"
+                data-i18n="faq.questions.community.answer"
+              >
+                You only need to register a Football Bros account to join our
+                community. After registration, you can participate in game
+                discussions, share your gaming experiences, post comments and
+                ratings, and interact with other gaming enthusiasts. We also
+                have dedicated community forums and Discord servers, which you
+                can access via the 'Community' link at the top of the website.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 项目 5 -->
+          <div
+            class="faq-item bg-white bg-opacity-5 rounded-xl overflow-hidden border border-white border-opacity-5"
+          >
+            <button
+              class="w-full flex items-center justify-between p-6 text-left"
+              aria-expanded="false"
+            >
+              <h3
+                class="text-xl font-medium"
+                data-i18n="faq.questions.download.question"
+              >
+                Does Football Bros provide game download services?
+              </h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-primary transition-transform duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div class="faq-content px-6 pb-6 hidden">
+              <p
+                class="text-gray-300"
+                data-i18n="faq.questions.download.answer"
+              >
+                Football Bros is primarily a game navigation and information
+                platform; we do not directly provide game download services.
+                However, we provide official purchase or download links for each
+                game, directing you to the game developer's or authorized
+                distributor's website for purchase or download. This ensures you
+                get legitimate games and supports the work of game developers.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 项目 6 -->
+          <div
+            class="faq-item bg-white bg-opacity-5 rounded-xl overflow-hidden border border-white border-opacity-5"
+          >
+            <button
+              class="w-full flex items-center justify-between p-6 text-left"
+              aria-expanded="false"
+            >
+              <h3
+                class="text-xl font-medium"
+                data-i18n="faq.questions.submit.question"
+              >
+                How do I submit my own developed game to Football Bros?
+              </h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-primary transition-transform duration-300"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <div class="faq-content px-6 pb-6 hidden">
+              <p class="text-gray-300" data-i18n="faq.questions.submit.answer">
+                If you are a game developer, you can submit your game through
+                the 'Developer Resources' link at the bottom of our website. You
+                will need to provide basic information about your game,
+                screenshots, videos, system requirements, and other detailed
+                materials. Our review team will review it within 5 business days
+                of receiving the submission and add your game to our database
+                after approval.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 页脚区域 -->
+    <footer class="pt-20 pb-10 px-4">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <!-- Logo & 描述 -->
+          <div class="lg:col-span-1">
+            <a href="index.html" class="font-bold inline-block mb-4">
+              <span
+                class="logo-text text-gradient bg-gradient-to-r from-primary via-secondary to-purple-500 bg-clip-text text-transparent font-black tracking-tight"
+                >FootballBros</span
+              >
+            </a>
+            <p class="text-gray-400 mb-6" data-i18n="footer.description">
+              Your game navigation station, helping you discover and explore the
+              wonderful world of games
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-primary transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-primary transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-primary transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-primary transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- 网站链接 -->
+          <div>
+            <h4 class="text-lg font-bold mb-6" data-i18n="footer.navigation">
+              Website Navigation
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="footer.navLinks.home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#features"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="footer.navLinks.features"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="games.html"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="footer.navLinks.games"
+                  >Game Categories</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="footer.navLinks.testimonials"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#faq"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="footer.navLinks.faq"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="footer.navLinks.about"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 游戏分类 -->
+          <div>
+            <h4
+              class="text-lg font-bold mb-6"
+              data-i18n="footer.popularCategories"
+            >
+              Popular Categories
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="games.categories.action"
+                  >Action</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="games.categories.adventure"
+                  >Adventure</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="games.categories.puzzle"
+                  >Puzzle</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="games.categories.shooting"
+                  >Shooting</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="games.categories.racing"
+                  >Racing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-primary transition-colors"
+                  data-i18n="games.categories.sports"
+                  >Sports</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- 联系我们 -->
+          <div>
+            <h4 class="text-lg font-bold mb-6" data-i18n="footer.contact">
+              Contact Us
+            </h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-primary mr-3 flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
+                <span>
+                  <span data-i18n="footer.contactEmail">Email</span>:
+                  address@gmail.com
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 版权信息 -->
+        <div class="pt-8 border-t border-gray-800 text-center">
+          <p class="text-gray-400 text-sm" data-i18n="footer.copyright">
+            © 2025 Football Bros. All rights reserved. Designed and developed by
+            <a
+              href="mailto:address@gmail.com"
+              class="text-primary hover:underline"
+              >developer</a
+            >
+          </p>
+          <p class="text-gray-500 text-xs mt-2" data-i18n="footer.disclaimer">
+            This website is for demonstration purposes only, all game trademarks
+            and images belong to their respective owners
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SEO - 结构化数据 (JSON-LD Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "All Games - Football Bros",
+        "description": "Browse and discover all games available on Football Bros. Find your favorite games by category.",
+        "url": "https://onlinefootballbros.com/games.html",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Football Bros",
+          "url": "https://onlinefootballbros.com/"
+        }
+      }
+    </script>
+
+    <!-- SEO - 面包屑导航结构化数据 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://onlinefootballbros.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "All Games",
+            "item": "https://onlinefootballbros.com/games.html"
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>

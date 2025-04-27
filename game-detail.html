@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Details - Football Bros</title>
+
+    <!-- SEO - 动态元描述，通过JavaScript设置具体游戏名称和描述 -->
+    <title>Football Bros - Play for free online</title>
+    <meta
+      name="description"
+      content="Free online Football Bros game, explore tens of thousands of exciting games, start now!"
+    />
+
+    <meta
+      name="keywords"
+      content="football bros, games, free games, online games,navigation, game categories, game recommendations"
+    />
+    
+    <meta name="author" content="developer" />
+
+    <!-- SEO - 规范链接（将在JavaScript中动态设置） -->
+    <link
+      rel="canonical"
+      href="https://onlinefootballbros.com/game-detail.html"
+      id="canonical-link"
+    />
+
+    <!-- SEO - 多语言支持 -->
+    <link rel="alternate" hreflang="en-US" id="alternate-en" />
+    <link rel="alternate" hreflang="zh-CN" id="alternate-zh" />
+
+    <!-- SEO - 搜索引擎控制 -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- SEO - 网站所有者验证 -->
+    <meta
+      name="google-site-verification"
+      content="your-google-verification-code"
+    />
+    <meta
+      name="baidu-site-verification"
+      content="your-baidu-verification-code"
+    />
+
+    <!-- SEO - Open Graph 标签（社交媒体分享，将通过JavaScript动态设置） -->
+    <meta
+      property="og:title"
+      content="Game Details - Football Bros"
+      id="og-title"
+    />
+    <meta
+      property="og:description"
+      content="Explore and play games on Football Bros. Find detailed information, screenshots, and try the game directly in your browser."
+      id="og-description"
+    />
+    <meta
+      property="og:image"
+      content="https://onlinefootballbros.com/img/preview.png"
+      id="og-image"
+    />
+    <meta
+      property="og:url"
+      content="https://onlinefootballbros.com/game-detail.html"
+      id="og-url"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Football Bros" />
+
+    <!-- SEO - Twitter 卡片标签 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Game Details - Football Bros"
+      id="twitter-title"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore and play games on Football Bros. Find detailed information, screenshots, and try the game directly in your browser."
+      id="twitter-description"
+    />
+    <meta
+      name="twitter:image"
+      content="https://onlinefootballbros.com/img/preview.png"
+      id="twitter-image"
+    />
+
+    <!-- SEO - 网站图标 -->
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/img/favicon.ico" />
+
+    <!-- CSS 样式引入 -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Tailwind CDN 引入 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8b5cf6",
+              secondary: "#6366f1",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- 页面自定义样式 -->
+    <style>
+      /* 游戏详情页面特定样式 */
+      .game-iframe-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9比例 = (9 / 16 * 100)% */
+        overflow: hidden;
+        border-radius: 12px;
+        background-color: #000;
+        transition: padding-bottom 0.3s ease; /* 平滑过渡效果 */
+      }
+      .game-iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      /* 游戏控制按钮样式 */
+      .game-frame-control {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        margin-top: 12px;
+      }
+      .game-frame-control button {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 6px 12px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.8);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: all 0.2s;
+      }
+      .game-frame-control button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 1);
+      }
+      /* 标签和分类样式 */
+      .game-tag {
+        background-color: rgba(139, 92, 246, 0.2);
+        color: #8b5cf6;
+        padding: 2px 8px;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+      }
+      .game-category {
+        background-color: #8b5cf6;
+        color: white;
+        padding: 4px 12px;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+        margin-right: 0.75rem;
+        margin-bottom: 0.75rem;
+        display: inline-block;
+      }
+      /* 响应式调整 */
+      @media (max-width: 640px) {
+        .game-iframe-container {
+          margin: 0 -0.5rem; /* 在小屏幕上减少容器左右边距，让游戏窗口能够更宽 */
+          border-radius: 0.5rem;
+        }
+        #game-name {
+          font-size: 1.5rem; /* 在小屏幕上减小标题字体大小 */
+        }
+      }
+      /* 为LOGO添加特殊样式 */
+      .logo-text {
+        text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+        letter-spacing: -0.5px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .logo-text::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(139, 92, 246, 0.8),
+          transparent
+        );
+        opacity: 0.7;
+      }
+
+      @media (min-width: 768px) {
+        .logo-text {
+          font-size: 1.75rem;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .logo-text {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+
+    <!-- JavaScript 库加载 -->
+    <!-- 使用jQuery CDN而不是本地文件 -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery fallback if CDN fails -->
+    <script>
+      // Check if jQuery loaded successfully
+      if (typeof jQuery === "undefined") {
+        console.log(
+          "Primary jQuery CDN failed, attempting to load backup jQuery"
+        );
+        // Create a new script element to load backup jQuery
+        var script = document.createElement("script");
+        script.src =
+          "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js";
+        script.onload = function () {
+          console.log("Backup jQuery loaded successfully");
+          // Initialize jQuery-i18next if i18next is already loaded
+          if (
+            typeof i18next !== "undefined" &&
+            typeof jqueryI18next !== "undefined"
+          ) {
+            console.log("Reinitializing jqueryI18next");
+            jqueryI18next.init(i18next, jQuery, { useOptionsAttr: true });
+            window.jqueryI18nextReady = true;
+          }
+        };
+        script.onerror = function () {
+          console.error(
+            "Backup jQuery loading failed, internationalization functions will be limited"
+          );
+        };
+        document.head.appendChild(script);
+      } else {
+        console.log("jQuery loaded successfully");
+      }
+    </script>
+
+    <!-- Load i18next related libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.8.14/i18next.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-http-backend@1.4.1/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@6.1.4/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-i18next@1.2.1/jquery-i18next.min.js"></script>
+
+    <!-- Load i18n module first, ensuring internationalization init before other scripts -->
+    <script src="js/i18n.js"></script>
+
+    <!-- jQuery and i18next status check script -->
+    <script>
+      // Unified handling to check and ensure internationalization functions properly
+      window.ensureI18n = function () {
+        console.log("Checking internationalization environment...");
+
+        // Check if jQuery is available, and if jQuery is available but $ is not, then set $
+        if (typeof $ === "undefined" && typeof jQuery !== "undefined") {
+          console.log("Found jQuery not assigned to $, fixing");
+          window.$ = jQuery;
+        }
+
+        // Check if i18next and jqueryI18next are both ready
+        if (
+          typeof i18next !== "undefined" &&
+          i18next.isInitialized &&
+          typeof $ !== "undefined" &&
+          typeof jqueryI18next !== "undefined"
+        ) {
+          // Check if jqueryI18next plugin is properly initialized
+          if (typeof $.fn.localize === "undefined") {
+            console.log(
+              "jQuery.fn.localize not defined, attempting to initialize jqueryI18next"
+            );
+            try {
+              jqueryI18next.init(i18next, $, { useOptionsAttr: true });
+              console.log("Manual initialization of jqueryI18next successful");
+              return true;
+            } catch (e) {
+              console.error(
+                "Manual initialization of jqueryI18next failed:",
+                e
+              );
+              return false;
+            }
+          } else {
+            console.log("Internationalization environment normal");
+            return true;
+          }
+        }
+
+        console.log(
+          "Internationalization environment incomplete, waiting for readiness"
+        );
+        return false;
+      };
+
+      // Check internationalization status after page load
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(window.ensureI18n, 1000);
+      });
+    </script>
+
+    <!-- Use defer attribute to delay loading other scripts, ensuring jQuery and i18next are loaded -->
+    <script src="js/game-detail.js" defer></script>
+    <script src="js/faq.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-slate-900 to-gray-900 text-white"
+  >
+    <!-- Inline script to ensure jQuery and i18next are available -->
+    <script>
+      // Set default language to English (for first-time visitors)
+      (function () {
+        try {
+          // If language not set or is first visit, use English by default
+          if (
+            !localStorage.getItem("i18nextLng") ||
+            !localStorage.getItem("visited")
+          ) {
+            console.log(
+              "Inline script detected first visit or language not set, defaulting to English"
+            );
+            localStorage.setItem("visited", "true");
+            localStorage.setItem("i18nextLng", "en");
+            // Set cookie as backup
+            document.cookie = "i18next=en;path=/;max-age=31536000";
+          }
+        } catch (e) {
+          console.warn("Unable to set default language:", e);
+        }
+      })();
+
+      // Immediately check and handle jQuery availability
+      (function () {
+        // Expose jQuery object to window scope
+        if (typeof jQuery !== "undefined" && typeof $ === "undefined") {
+          window.$ = jQuery;
+          console.log("jQuery exists but $ is undefined, fixed");
+        }
+
+        // Set variable to avoid repeated checks
+        window._jQueryChecked = false;
+
+        // Regularly check jQuery status and fix issues
+        function ensureJQuery() {
+          if (window._jQueryChecked) return;
+
+          if (typeof jQuery !== "undefined") {
+            window.$ = jQuery;
+            window._jQueryChecked = true;
+            console.log("Ensured jQuery properly referenced");
+
+            // Initialize jquery-i18next if i18next is loaded
+            if (
+              typeof i18next !== "undefined" &&
+              i18next.isInitialized &&
+              typeof jqueryI18next !== "undefined"
+            ) {
+              try {
+                jqueryI18next.init(i18next, $, { useOptionsAttr: true });
+                console.log("Reinitialized jqueryI18next");
+
+                // Update language button after initialization
+                if (typeof window.updateLanguageButton === "function") {
+                  console.log(
+                    "Calling update language button from inline script"
+                  );
+                  window.updateLanguageButton();
+                }
+              } catch (e) {
+                console.error("jqueryI18next initialization failed", e);
+              }
+            }
+          } else {
+            setTimeout(ensureJQuery, 200);
+          }
+        }
+
+        // Start checking immediately
+        ensureJQuery();
+      })();
+    </script>
+
+    <!-- Structured data markup - dynamically updated in JS -->
+    <script type="application/ld+json" id="game-schema">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Game Details",
+        "description": "Explore and play games on Football Bros",
+        "gamePlatform": "Web Browser",
+        "applicationCategory": "Game",
+        "genre": "Football",
+        "image": "https://onlinefootballbros.com/img/preview.png",
+        "url": "https://onlinefootballbros.com/game-detail.html",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "reviewCount": "100"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Football Bros",
+          "url": "https://onlinefootballbros.com/"
+        }
+      }
+    </script>
+
+    <!-- SEO - 面包屑导航结构化数据 -->
+    <script type="application/ld+json" id="breadcrumb-schema">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://onlinefootballbros.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Games",
+            "item": "https://onlinefootballbros.com/games.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Game Details",
+            "item": "https://onlinefootballbros.com/game-detail.html"
+          }
+        ]
+      }
+    </script>
+
+    <!-- SEO - 更新元标签和结构化数据的JavaScript -->
+    <script>
+      // 在游戏数据加载后更新SEO相关元素
+      document.addEventListener("DOMContentLoaded", function () {
+        // 监听游戏数据加载完成事件
+        document.addEventListener("gameDataLoaded", function (e) {
+         
+          // 更新游戏结构化数据
+          const gameSchema = {
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            name: game.name,
+            description:
+              game.description || "Play this exciting game on Football Bros",
+            gamePlatform: "Web Browser",
+            applicationCategory: "Game",
+            genre: game.category || "Football",
+            image: game.image || `${baseUrl}/img/default-game.jpg`,
+            url: gameUrl,
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "USD",
+              availability: "https://schema.org/InStock",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: game.rating || "4.5",
+              reviewCount: game.reviewCount || "100",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "Football Bros",
+              url: baseUrl,
+            },
+          };
+
+          // 更新面包屑结构化数据
+          const breadcrumbSchema = {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: baseUrl,
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Games",
+                item: `${baseUrl}/games.html`,
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: game.name,
+                item: gameUrl,
+              },
+            ],
+          };
+
+          // 更新页面上的JSON-LD脚本
+          document.getElementById("game-schema").textContent =
+            JSON.stringify(gameSchema);
+          document.getElementById("breadcrumb-schema").textContent =
+            JSON.stringify(breadcrumbSchema);
+
+          console.log("SEO elements updated for game:", game.name);
+        });
+
+        // 添加平滑滚动到评论区的代码
+        document.querySelectorAll('a[href="#Feedback"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const commentSection = document.getElementById("Feedback");
+            if (!commentSection) return;
+
+            // 获取顶部导航栏的高度
+            const headerHeight = document.querySelector("header").offsetHeight;
+
+            // 计算滚动位置，考虑头部导航的高度，再减去一些额外的间距
+            const offsetTop =
+              commentSection.getBoundingClientRect().top +
+              window.pageYOffset -
+              headerHeight -
+              20;
+
+            // 平滑滚动到目标位置
+            window.scrollTo({
+              top: offsetTop,
+              behavior: "smooth",
+            });
+
+            // 添加高亮效果让用户更容易看到评论区
+            const commentContainer = commentSection.closest(
+              ".bg-white.bg-opacity-5"
+            );
+            if (commentContainer) {
+              commentContainer.classList.add("comment-highlight");
+
+              // 添加脉冲动画效果的样式，如果还不存在
+              if (!document.getElementById("comment-highlight-style")) {
+                const style = document.createElement("style");
+                style.id = "comment-highlight-style";
+                style.textContent = `
+                  @keyframes commentPulse {
+                    0% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.7); }
+                    70% { box-shadow: 0 0 0 10px rgba(139, 92, 246, 0); }
+                    100% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0); }
+                  }
+                  
+                  .comment-highlight {
+                    animation: commentPulse 2s ease-out;
+                    border-color: rgba(139, 92, 246, 0.6) !important;
+                    transition: all 0.5s ease;
+                  }
+                `;
+                document.head.appendChild(style);
+              }
+
+              // 1.5秒后移除高亮效果
+              setTimeout(() => {
+                commentContainer.classList.remove("comment-highlight");
+              }, 3000);
+            }
+          });
+        });
+      });
+    </script>
+
+    <!-- 顶部导航栏 -->
+    <header class="bg-black bg-opacity-40 backdrop-blur-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <a href="index.html" class="font-bold flex items-center gap-1">
+          <span
+            class="logo-text text-gradient bg-gradient-to-r from-primary via-secondary to-purple-500 bg-clip-text text-transparent font-black tracking-tight"
+            >OnlineFootballBros.com</span
+          >
+        </a>
+        <div class="flex items-center space-x-4">
+          <nav>
+            <ul class="flex space-x-8">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-lg font-medium text-white hover:text-primary transition-colors"
+                  data-i18n="footer.navLinks.home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#games"
+                  class="text-lg font-medium text-white hover:text-primary transition-colors"
+                  data-i18n="header.games"
+                  >Games</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#features"
+                  class="text-lg font-medium text-white hover:text-primary transition-colors"
+                  data-i18n="header.features"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Feedback"
+                  class="text-lg font-medium text-white hover:text-primary transition-colors"
+                  data-i18n="header.feedback"
+                  >Feedback</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- 语言选择下拉菜单 -->
+        <div id="language-dropdown" class="relative">
+          <button
+            id="language-button"
+            class="text-sm text-light hover:text-primary transition-colors flex items-center"
+            type="button"
+          >
+            <!-- 由JS脚本填充当前语言 -->
+            <span class="mr-1"></span>
+            <span></span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 ml-1"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+          <div
+            id="language-options"
+            class="absolute right-0 mt-2 py-1 w-48 bg-dark border border-gray-700 rounded-md shadow-lg z-50"
+          >
+            <!-- 语言选项由JS脚本填充 -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 主内容区域 -->
+    <main class="container mx-auto px-4 py-8">
+      <!-- 游戏详情区域 -->
+      <div class="mb-12">
+        <!-- 返回按钮 -->
+        <a
+          id="back-button"
+          href="javascript:void(0)"
+          onclick="goBack()"
+          class="inline-flex items-center text-gray-400 hover:text-primary mb-8 transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 mr-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          <span data-i18n="gameDetail.backButton">Back</span>
+        </a>
+
+        <!-- 游戏信息卡片 -->
+        <div
+          class="bg-white bg-opacity-5 rounded-2xl p-6 mb-8 border border-white border-opacity-5"
+        >
+          <div class="flex flex-col md:flex-row gap-8">
+            <!-- 游戏图片 -->
+            <div class="w-full md:w-1/3 lg:w-1/4">
+              <div
+                class="aspect-square rounded-xl overflow-hidden bg-gradient-to-br from-primary/30 to-secondary/30 relative"
+              >
+                <div class="flex items-center justify-center h-full">
+                  <img
+                    id="game-image"
+                    src=""
+                    alt=""
+                    style="display: none"
+                    class="w-full h-full object-cover"
+                  />
+                  <p
+                    id="game-image-placeholder"
+                    class="text-lg opacity-50"
+                    data-i18n="games.noImage"
+                  >
+                    Game Image
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 游戏信息 -->
+            <div class="w-full md:w-2/3 lg:w-3/4">
+              <h1
+                id="game-name"
+                class="text-3xl font-bold mb-4"
+                data-i18n="gameDetail.loading"
+              >
+                Loading...
+              </h1>
+
+              <!-- 游戏分类 -->
+              <div class="mb-4">
+                <h3
+                  class="text-gray-400 mb-2"
+                  data-i18n="gameDetail.gameInfo.categories"
+                >
+                  Game Categories:
+                </h3>
+                <div id="game-categories">
+                  <div class="game-category" data-i18n="gameDetail.loading">
+                    Loading...
+                  </div>
+                </div>
+              </div>
+
+              <!-- 游戏标签 -->
+              <div class="mb-6">
+                <h3
+                  class="text-gray-400 mb-2"
+                  data-i18n="gameDetail.gameInfo.tags"
+                >
+                  Game Tags:
+                </h3>
+                <div id="game-tags">
+                  <div class="game-tag" data-i18n="gameDetail.loading">
+                    Loading...
+                  </div>
+                </div>
+              </div>
+
+              <!-- 游戏描述 -->
+              <div>
+                <h3
+                  class="text-gray-400 mb-2"
+                  data-i18n="gameDetail.gameInfo.description"
+                >
+                  Game Description:
+                </h3>
+                <p
+                  id="game-description"
+                  class="text-white leading-relaxed"
+                  data-i18n="gameDetail.loading"
+                >
+                  Loading...
+                </p>
+              </div>
+
+              <!-- 游戏附加信息 -->
+              <div id="game-additional-info" class="mt-4">
+                <!-- 动态添加发布日期等信息 -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 游戏窗口 -->
+        <div
+          class="bg-white bg-opacity-5 rounded-2xl p-6 border border-white border-opacity-5 mb-8"
+        >
+          <div class="max-w-full overflow-hidden">
+            <div class="game-iframe-container" id="game-iframe-container">
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 rounded-xl"
+                id="iframe-placeholder"
+              >
+                <div class="text-center">
+                  <div
+                    class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-primary mb-2"
+                  ></div>
+                  <p data-i18n="gameDetail.gameWindow.loading">
+                    Loading game...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 游戏控制按钮 -->
+            <div class="game-frame-control">
+              <button id="refresh-game" class="game-control-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 inline-block"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                  />
+                </svg>
+                <span data-i18n="gameDetail.gameWindow.refreshGame"
+                  >Refresh Game</span
+                >
+              </button>
+              <button id="fullscreen-game" class="game-control-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-4 w-4 inline-block"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5"
+                  />
+                </svg>
+                <span data-i18n="gameDetail.gameWindow.fullscreenMode"
+                  >Fullscreen Mode</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <section
+        id="Feedback"
+          class="bg-white bg-opacity-5 rounded-2xl p-6 border border-white border-opacity-5"
+        >
+          <!-- 评论 -->
+          <div id="tcomment"></div>
+          <!-- 评论 -->
+          <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.41/dist/twikoo.all.min.js"></script>
+          <script>
+            twikoo.init({
+              envId: "https://review-rose-eight.vercel.app/", // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+              el: "#tcomment", // 容器元素
+              // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+              // 获取 url 请求参数 id 值
+              path: `game-detail/id=${window.location.search.split("id=")[1]}`, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+              lang: "en",
+            });
+          </script>
+        </div>
+      </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-black bg-opacity-40 py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-8 md:mb-0">
+            <a href="#" class="font-bold flex items-center gap-2 mb-4">
+              <span
+                class="logo-text text-gradient bg-gradient-to-r from-primary via-secondary to-purple-500 bg-clip-text text-transparent font-black tracking-tight"
+                >FootballBros</span
+              >
+            </a>
+            <p class="text-gray-400 max-w-md" data-i18n="footer.description">
+              A collection of various web games, providing a one-stop gaming
+              experience for players.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+              <h4 class="text-lg font-bold mb-4" data-i18n="footer.navigation">
+                Website Navigation
+              </h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="index.html"
+                    class="text-gray-400 hover:text-primary transition-colors"
+                    data-i18n="footer.navLinks.home"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#games"
+                    class="text-gray-400 hover:text-primary transition-colors"
+                    data-i18n="header.games"
+                    >Games</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#features"
+                    class="text-gray-400 hover:text-primary transition-colors"
+                    data-i18n="header.features"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#contact"
+                    class="text-gray-400 hover:text-primary transition-colors"
+                    data-i18n="footer.contact"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4
+                class="text-lg font-bold mb-4"
+                data-i18n="footer.popularCategories"
+              >
+                Game Categories
+              </h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="index.html#games"
+                    class="text-gray-400 hover:text-primary transition-colors"
+                    data-i18n="games.categories.action"
+                    >Action</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#games"
+                    class="text-gray-400 hover:text-primary transition-colors"
+                    data-i18n="games.categories.adventure"
+                    >Adventure</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#games"
+                    class="text-gray-400 hover:text-primary transition-colors"
+                    data-i18n="games.categories.strategy"
+                    >Strategy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#games"
+                    class="text-gray-400 hover:text-primary transition-colors"
+                    data-i18n="games.categories.simulation"
+                    >Simulation</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold mb-4" data-i18n="footer.contact">
+                Contact Us
+              </h4>
+              <ul class="space-y-2">
+                <li class="text-gray-400">
+                  <span data-i18n="footer.contactEmail">Email</span>:
+                  address@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500"
+        >
+          <p data-i18n="footer.copyright">
+            © 2025 Football Bros. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function goBack() {
+        console.log("Back button clicked");
+        console.log("History length:", window.history.length);
+        console.log(
+          "Page referrer:",
+          document.referrer || "Direct visit (no referrer)"
+        );
+
+        // Check if there's navigation history and referrer page
+        if (window.history.length > 1 && document.referrer) {
+          console.log("Has history and referrer, going back");
+          window.history.back();
+        } else {
+          console.log("No history or referrer, going to home page");
+          // If no history or empty referrer, redirect to home page
+          window.location.href = "index.html";
+        }
+      }
+
+      // Set up the back button after page load
+      document.addEventListener("DOMContentLoaded", function () {
+        const backButton = document.getElementById("back-button");
+        if (backButton) {
+          console.log("Found back button, setting click event");
+
+          // If directly opened and no referrer page, modify button text to "Back to Home"
+          if (window.history.length <= 1 || !document.referrer) {
+            const buttonTextSpan = backButton.querySelector("span");
+            if (buttonTextSpan) {
+              buttonTextSpan.setAttribute("data-i18n", "gameDetail.backToHome");
+              // Will be automatically translated when i18next is initialized
+            }
+          }
+        } else {
+          console.warn("Back button element not found");
+        }
+
+        // Update language button on DOMContentLoaded
+        if (typeof window.updateLanguageButton === "function") {
+          console.log("Updating language button after page load");
+          setTimeout(window.updateLanguageButton, 100);
+        }
+
+        // 改进语言下拉菜单的行为
+        setupLanguageDropdown();
+      });
+
+      // 语言下拉菜单增强函数
+      function setupLanguageDropdown() {
+        const languageButton = document.getElementById("language-button");
+        const languageOptions = document.getElementById("language-options");
+        const languageDropdown = document.getElementById("language-dropdown");
+
+        if (!languageButton || !languageOptions || !languageDropdown) {
+          console.warn("语言下拉菜单元素未找到");
+          return;
+        }
+
+        // 确保下拉菜单始终可见并在正确的位置
+        function ensureDropdownVisibility() {
+          // 设置样式使下拉菜单保持在最上层
+          languageOptions.style.zIndex = "9999";
+          languageOptions.style.position = "absolute";
+          languageOptions.style.display = "block";
+          languageOptions.style.right = "0";
+          languageOptions.style.top = languageButton.offsetHeight + 4 + "px";
+
+          // 设置背景色和阴影
+          languageOptions.style.backgroundColor = "rgba(29, 29, 31, 0.95)";
+          languageOptions.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
+          languageOptions.style.border = "1px solid rgba(255, 255, 255, 0.1)";
+
+          // 增加语言选项的可点击区域
+          const optionLinks = languageOptions.querySelectorAll("a");
+          optionLinks.forEach((option) => {
+            option.style.padding = "10px 16px";
+
+            // 高亮当前选中的语言
+            if (
+              option.dataset.langCode ===
+              (i18next.language || "en").substring(0, 2)
+            ) {
+              option.style.backgroundColor = "rgba(139, 92, 246, 0.2)";
+              option.style.color = "#fff";
+            }
+          });
+
+          // 使用延时确保应用样式
+          setTimeout(() => {
+            if (languageOptions.style.display === "block") {
+              languageOptions.style.zIndex = "9999";
+            }
+          }, 10);
+        }
+
+        // 覆盖原有的点击事件
+        languageButton.onclick = function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          if (languageOptions.style.display === "block") {
+            languageOptions.style.display = "none";
+          } else {
+            ensureDropdownVisibility();
+          }
+        };
+
+        // 点击外部区域关闭下拉菜单
+        document.addEventListener("click", function (e) {
+          if (!languageDropdown.contains(e.target)) {
+            languageOptions.style.display = "none";
+          }
+        });
+
+        // 触摸屏支持
+        document.addEventListener("touchend", function (e) {
+          if (!languageDropdown.contains(e.target)) {
+            languageOptions.style.display = "none";
+          }
+        });
+      }
+
+      // Ensure language button is updated after page is fully loaded
+      window.addEventListener("load", function () {
+        if (typeof window.updateLanguageButton === "function") {
+          console.log("Updating language button after window.load");
+          window.updateLanguageButton();
+          // Update again after 1 second to ensure no other scripts interfere
+          setTimeout(window.updateLanguageButton, 1000);
+        }
+
+        // 再次确保语言下拉菜单正常工作
+        setupLanguageDropdown();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+{
+  "header": {
+    "games": "All Games",
+    "Soccer": "Soccer Games",
+    "features": "Features",
+    "testimonials": "Testimonials",
+    "faq": "FAQ",
+    "site": {
+      "game": "Game",
+      "station": "Station"
+    }
+  },
+  "hero": {
+    "title": "Discover Your Gaming World",
+    "subtitle": "Explore, discover and experience a colorful world of games, find your next gaming adventure",
+    "browseGames": "Browse Games",
+    "learnMore": "Learn More"
+  },
+  "games": {
+    "title": "Over ",
+    "titleHighlight": "100,000 +",
+    "titleSuffix": " Games Available",
+    "subtitle": "Find your favorite game style from various game types, start your gaming journey",
+    "loading": "Loading game data...",
+    "loadMore": "Load More Games",
+    "noGamesFound": "No games found matching your criteria",
+    "noImage": "Game Image",
+    "uncategorized": "Uncategorized",
+    "error": "Error",
+    "refresh": "Refresh",
+    "categories": {
+      "all": "All",
+      "io": ".IO",
+      "2player": "2 Player",
+      "3d": "3D",
+      "action": "Action",
+      "adventure": "Adventure",
+      "arcade": "Arcade",
+      "babyhazel": "Baby Hazel",
+      "bejeweled": "Bejeweled",
+      "boys": "Boys",
+      "clicker": "Clicker",
+      "cooking": "Cooking",
+      "girls": "Girls",
+      "hypercasual": "Hypercasual",
+      "multiplayer": "Multiplayer",
+      "puzzle": "Puzzle",
+      "racing": "Racing",
+      "shooting": "Shooting",
+      "soccer": "Soccer",
+      "sports": "Sports",
+      "stickman": "Stickman"
+    }
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page {{page}}"
+  },
+  "features": {
+    "titlePrefix": "Ultimate",
+    "titleHighlight": "Experience",
+    "titleSuffix": "for Gamers",
+    "subtitle": "We provide various features to help you discover, explore and enjoy gaming",
+    "cards": {
+      "recommendation": {
+        "title": "Smart Game Recommendations",
+        "description": "Based on your interests and gaming history, our smart algorithm will recommend the most suitable games for you, ensuring you never miss any exciting content."
+      },
+      "categories": {
+        "title": "Comprehensive Game Categories",
+        "description": "From action, adventure to strategy and simulation, we provide a rich variety of game categories to help you quickly find your favorite game types."
+      },
+      "details": {
+        "title": "Detailed Game Information",
+        "description": "Each game provides detailed information, including game introduction, system requirements, game ratings and player reviews, helping you make the best choice."
+      },
+      "download": {
+        "title": "Quick Download Links",
+        "description": "Get official download links with one click, no need to search all over the internet, start your gaming adventure safely and quickly."
+      },
+      "community": {
+        "title": "Player Community",
+        "description": "Join our player community, share gaming experiences, get tips and strategies, and meet like-minded gaming friends."
+      },
+      "news": {
+        "title": "Gaming News",
+        "description": "Get the latest game release information, industry trends and promotional activities in a timely manner, keeping you at the forefront of gaming trends."
+      }
+    }
+  },
+  "testimonials": {
+    "titlePrefix": "Real",
+    "titleHighlight": "Player",
+    "titleSuffix": "Reviews",
+    "subtitle": "Hear what other gaming enthusiasts say about our platform and their discovery journey on Football Bros",
+    "reviews": {
+      "user1": {
+        "content": "Football Bros completely changed the way I find games! The interface design is very intuitive, and the classification system allows me to quickly find games I'm interested in. Most importantly, its recommendation algorithm is very accurate, and I discovered many games that I didn't know before but now really enjoy.",
+        "name": "John Miller",
+        "role": "Experienced Gamer"
+      },
+      "user2": {
+        "content": "As a parent, I've been looking for games suitable for my children. Football Bros's detailed categories and age rating system make it easy for me to find appropriate games. The website design is also very clear, making it easy to use even for someone like me who isn't very tech-savvy.",
+        "name": "Sarah Johnson",
+        "role": "Parent Focused on Children's Education"
+      },
+      "user3": {
+        "content": "I'm an independent game developer, and Football Bros provides an excellent platform to showcase my games. The website's user base is very targeted, and through this platform, I've connected with many players interested in my games. The platform's operations team is also very professional and supportive.",
+        "name": "Michael Thompson",
+        "role": "Independent Game Developer"
+      },
+      "user4": {
+        "content": "As an esports enthusiast, I appreciate Football Bros's professional categorization and in-depth analysis of competitive games. The game information and match updates they provide are very timely and comprehensive, making it my go-to platform for gaming information.",
+        "name": "David Rodriguez",
+        "role": "Esports Enthusiast"
+      },
+      "user5": {
+        "content": "Football Bros's user community is one of my favorite features. Here, I've met many like-minded friends, and we discuss games and share experiences together. This platform is not just a game navigation site but also a home for gaming enthusiasts.",
+        "name": "Emily Wilson",
+        "role": "Active Community Player"
+      },
+      "user6": {
+        "content": "The website responds very quickly, and the design is modern, giving a high-end and impressive feel. As a UI designer, I really appreciate Football Bros's interface design and user experience. It sets a new standard for gaming website design.",
+        "name": "Ryan Brooks",
+        "role": "UI Designer"
+      }
+    }
+  },
+  "faq": {
+    "titlePrefix": "Frequently",
+    "titleHighlight": "Asked",
+    "titleSuffix": "Questions",
+    "subtitle": "We've collected some frequently asked questions from users, hoping to help you better understand Football Bros",
+    "questions": {
+      "recommendation": {
+        "question": "How does Football Bros recommend games?",
+        "answer": "Football Bros uses advanced recommendation algorithms based on your browsing history, game preferences, and feedback from other users to recommend games. Our system continuously learns and optimizes to provide the most accurate game recommendations. Additionally, our team of game experts regularly curates featured game collections to ensure you discover high-quality game content."
+      },
+      "search": {
+        "question": "How do I find specific types of games on Football Bros?",
+        "answer": "You can use the search function at the top of our website to directly search for game names or keywords. Additionally, we provide multiple categorization methods allowing you to filter by game type, platform, release year, and more. On the game category page, you can use the filters on the left to precisely locate the game types you're interested in."
+      },
+      "update": {
+        "question": "How often is game information updated on Football Bros?",
+        "answer": "Our game database is updated daily to ensure the latest game information is provided. Newly released games are typically added to our database on the day of release or the following day. Game ratings, reviews, and user feedback are updated in real-time. Our editorial team also regularly reviews and updates game descriptions and detailed information to ensure accuracy."
+      },
+      "community": {
+        "question": "How do I join the Football Bros user community?",
+        "answer": "You only need to register a Football Bros account to join our community. After registration, you can participate in game discussions, share your gaming experiences, post comments and ratings, and interact with other gaming enthusiasts. We also have dedicated community forums and Discord servers, which you can access via the 'Community' link at the top of the website."
+      },
+      "download": {
+        "question": "Does Football Bros provide game download services?",
+        "answer": "Football Bros is primarily a game navigation and information platform; we do not directly provide game download services. However, we provide official purchase or download links for each game, directing you to the game developer's or authorized distributor's website for purchase or download. This ensures you get legitimate games and supports the work of game developers."
+      },
+      "submit": {
+        "question": "How do I submit my own developed game to Football Bros?",
+        "answer": "If you are a game developer, you can submit your game through the 'Developer Resources' link at the bottom of our website. You will need to provide basic information about your game, screenshots, videos, system requirements, and other detailed materials. Our review team will review it within 5 business days of receiving the submission and add your game to our database after approval."
+      }
+    }
+  },
+  "footer": {
+    "description": "Your game navigation station, helping you discover and explore the wonderful world of games",
+    "navigation": "Website Navigation",
+    "navLinks": {
+      "home": "Home",
+      "features": "Features",
+      "games": "Game Categories",
+      "testimonials": "Testimonials",
+      "faq": "FAQ",
+      "about": "About Us"
+    },
+    "popularCategories": "Popular Categories",
+    "contact": "Contact Us",
+    "copyright": "© 2025 Football Bros. All rights reserved. Designed and developed by developer",
+    "disclaimer": "This website is for demonstration purposes only, all game trademarks and images belong to their respective owners"
+  },
+  "languageSwitcher": "中文",
+  "gameDetail": {
+    "pageTitle": "Game Details - Football Bros",
+    "backButton": "Back",
+    "backToHome": "Back to Home",
+    "loading": "Loading...",
+    "gameInfo": {
+      "categories": "Game Categories:",
+      "tags": "Game Tags:",
+      "description": "Game Description:",
+      "publishedDate": "Published Date:",
+      "gameSize": "Game Size:",
+      "uncategorized": "Uncategorized",
+      "noTags": "No Tags",
+      "noDescription": "No game description available"
+    },
+    "gameWindow": {
+      "startGame": "Start Game",
+      "loading": "Loading game...",
+      "refreshGame": "Refresh Game",
+      "fullscreenMode": "Fullscreen Mode",
+      "originalSize": "Original Size",
+      "adaptScreen": "Adapt to Screen Width",
+      "noGameLink": "No game link available",
+      "loadFailed": "Game loading failed, please refresh the page"
+    },
+    "recommended": {
+      "title": "Recommended for You",
+      "rating": "Rating"
+    },
+    "errors": {
+      "loadFailed": "Loading Failed",
+      "noGameId": "Game ID not found, please return to game list",
+      "getGameFailed": "Failed to get game details",
+      "gameNotFound": "Game not found. The requested game may not exist or has been removed.",
+      "gameNotFoundShort": "Game not found",
+      "findOtherGames": "Find other games",
+      "unknownError": "Unknown error",
+      "networkFailed": "Network request failed, status code",
+      "refreshTip": "Please try refreshing the page or return to the game list.",
+      "loadGameFailed": "Unable to load game"
+    }
+  }
+}

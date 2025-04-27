@@ -1,0 +1,61 @@
+# Football Bros 搜索引擎爬虫配置
+# 更新日期: 2025-04-22
+
+# 默认允许所有搜索引擎爬取主要页面
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /games.html
+Allow: /game-detail.html
+Allow: /sitemap.xml
+
+# 主要搜索引擎特定配置
+# Google 爬虫
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /img/
+
+# Bing 爬虫
+User-agent: Bingbot
+Allow: /
+
+# Baidu 爬虫
+User-agent: Baiduspider
+Allow: /
+
+# Yandex 爬虫
+User-agent: Yandex
+Allow: /
+
+# 移动搜索爬虫
+User-agent: Googlebot-Mobile
+Allow: /
+
+# 社交媒体爬虫
+User-agent: facebookexternalhit
+Allow: /
+User-agent: Twitterbot
+Allow: /
+
+# 禁止爬取的目录和文件
+# 资源文件和开发文件
+Disallow: /css/
+Disallow: /js/
+Disallow: /img/source/
+Disallow: /*.json$
+Disallow: /*.md$
+
+# 管理和临时文件
+Disallow: /admin/
+Disallow: /temp/
+Disallow: /test/
+Disallow: /*.map$
+
+# 爬虫抓取频率建议
+# 为各大搜索引擎提供抓取频率建议，避免服务器过载
+Crawl-delay: 10
+
+# 站点地图位置
+# 提供给搜索引擎的站点地图链接，帮助更好地收录网站内容
+Sitemap: https://onlinefootballbros.com/sitemap.xml 
